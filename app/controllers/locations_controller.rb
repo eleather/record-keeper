@@ -40,11 +40,24 @@ class LocationsController < ApplicationController
   # POST /locations
   # POST /locations.xml
   def create
+    location_params = params[:location].dup
+    parent_id = params[:location].delete(:parent_id)
+    @parent = Location.find(parent_id) if parent_id
+    
+    outgoing_id = params[:location].delete(:outgoing_id)
+    @outgoing = Location.find(outgoing_id) if outgoing_id
+    
+    incoming_id = params[:location].delete(:incoming_id)
+    @incoming = Location.find(incoming_id) if incoming_id
+    
     @location = Location.new(params[:location])
 
     respond_to do |format|
       if @location.save
-        flash[:notice] = 'Location was successfully created.'
+        flash[:notice] = 'Location was successfully created. with params ' + location_params.inspect
+        @location.move_to_child_of @parent if @parent
+        LocationGraphEdge.create(:location1 => @outgoing, :location2 => @location) if @outgoing
+        LocationGraphEdge.create(:location1 => @location, :location2 => @incoming) if @incoming
         format.html { redirect_to(@location) }
         format.xml  { render :xml => @location, :status => :created, :location => @location }
       else
@@ -80,6 +93,30 @@ class LocationsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(locations_url) }
       format.xml  { head :ok }
+    end
+  end
+  
+  # GET /locations/new_sublocation
+  # GET /locations/new_sublocation.xml
+  def new_sublocation
+    @parent_location = Location.find(params[:id])
+    @location = Location.new
+
+    respond_to do |format|
+      format.html { render :action => "new" }
+      format.xml  { render :xml => @location }
+    end
+  end
+  
+  # GET /locations/new_outgoing_location
+  # GET /locations/new_outgoing_location.xml
+  def new_outgoing_location
+    @outgoing_location = Location.find(params[:id])
+    @location = Location.new
+
+    respond_to do |format|
+      format.html { render :action => "new" }
+      format.xml  { render :xml => @location }
     end
   end
 end

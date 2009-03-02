@@ -8,24 +8,33 @@
   <%=h @location.text %>
 </p>
 
-<p><span><b>Sub-Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :add_sublocation, :id => @location.id} %></span></p>
+<p>
+  <b>Parent:</b>
+	<% if @location.parent %>
+  	<%= link_to @location.parent.title, {:action => :show, :id => @location.parent.id} %>
+	<% else %>
+		none
+	<% end %>
+</p>
+
+<p><span><b>Sub-Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :new_sublocation, :id => @location.id} %></span></p>
 <% @location.children.each do |location| %>
 <p>
-	<%=h location.inspect %>
+	<%= link_to location.title, {:action => :show, :id => location.id} %>
 </p>
 <% end %>
 
-<p><span><b>Outgoing Adjacent Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :add_sublocation, :id => @location.id} %></span></p>
+<p><span><b>Outgoing Adjacent Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :new_outgoing_location, :id => @location.id} %></span></p>
 <% @location.outgoing_adjacent_locations.each do |location| %>
 <p>
-	<%=h location.inspect %>
+	<%= link_to location.title, {:action => :show, :id => location.id} %>
 </p>
 <% end %>
 
-<p><span><b>Incoming Adjacent Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :add_sublocation, :id => @location.id} %></span></p>
+<p><span><b>Incoming Adjacent Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :new_sublocation, :id => @location.id} %></span></p>
 <% @location.incoming_adjacent_locations.each do |location| %>
 <p>
-	<%=h location.inspect %>
+	<%= link_to location.title, {:action => :show, :id => location.id} %>
 </p>
 <% end %>
 
