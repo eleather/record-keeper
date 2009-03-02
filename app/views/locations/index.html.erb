@@ -5,13 +5,14 @@
     <th>Title</th>
   </tr>
 
-<% for location in @locations %>
+<% for location in @locations.select { |l| l.parent.nil? } %>
   <tr>
     <td><%=h location.title %></td>
     <td><%= link_to 'Show', location %></td>
     <td><%= link_to 'Edit', edit_location_path(location) %></td>
     <td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
+	<%= show_child_locations(location, 1) %>
 <% end %>
 </table>
 

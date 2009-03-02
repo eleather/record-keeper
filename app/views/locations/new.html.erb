@@ -14,8 +14,14 @@
   </p>
 
 	<%= f.hidden_field :parent_id, :value => @parent_location.id if @parent_location %>
-	<%= f.hidden_field :outgoing_id, :value => @outgoing_location.id if @outgoing_location %>
-	<%= f.hidden_field :incoming_id, :value => @incoming_location.id if @incoming_location %>
+	
+	<% if @outgoing_location %>
+		<%= f.hidden_field :outgoing_id, :value => @outgoing_location.id %>
+	<% end %>
+	
+	<% if @incoming_location %>
+		<%= f.hidden_field :incoming_id, :value => @incoming_location.id %>
+	<% end %>
 
   <p>
     <%= f.submit "Create" %>

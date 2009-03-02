@@ -25,16 +25,16 @@
 <% end %>
 
 <p><span><b>Outgoing Adjacent Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :new_outgoing_location, :id => @location.id} %></span></p>
-<% @location.outgoing_adjacent_locations.each do |location| %>
+<% @location.location_edges_out.each do |edge| %>
 <p>
-	<%= link_to location.title, {:action => :show, :id => location.id} %>
+	<%= link_to Location.find(edge.location2).title, {:action => :show, :id => edge.location2.id} %>&nbsp;&nbsp;<%= link_to 'Edit Transition Note', {:action => :edit_location_graph_edge, :id => edge.id, :originating_location => edge.location1.id}%>
 </p>
 <% end %>
 
 <p><span><b>Incoming Adjacent Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :new_sublocation, :id => @location.id} %></span></p>
 <% @location.incoming_adjacent_locations.each do |location| %>
 <p>
-	<%= link_to location.title, {:action => :show, :id => location.id} %>
+	<%= link_to Location.find(edge.location1).title, {:action => :show, :id => edge.location1.id} %>&nbsp;&nbsp;<%= link_to 'Edit Transition Note', {:action => :edit_location_graph_edge, :id => edge.id, :originating_location => edge.location2.id}%>
 </p>
 <% end %>
 

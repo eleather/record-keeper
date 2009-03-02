@@ -1,0 +1,21 @@
+<h1>Editing location</h1>
+
+<%= error_messages_for :location_graph_edge %>
+
+<% form_for(@location_graph_edge, :url => {:action => 'update_location_graph_edge', :originating_location => @originating_location.id, :id => @location_graph_edge.id}) do |f| %>
+  <p>
+    <b><%= Location.find(@location_graph_edge.location1).title %></b> to <b><%= Location.find(@location_graph_edge.location2).title %></b>
+  </p>
+
+  <p>
+    <b>Transition Note</b><br />
+    <%= f.text_area :transition_note %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @originating_location %> |
+<%= link_to 'Back', locations_path %>
