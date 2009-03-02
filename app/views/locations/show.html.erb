@@ -8,14 +8,26 @@
   <%=h @location.text %>
 </p>
 
-<p><b>Sub-Locations</b></p>
+<p><span><b>Sub-Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :add_sublocation, :id => @location.id} %></span></p>
 <% @location.children.each do |location| %>
 <p>
 	<%=h location.inspect %>
 </p>
 <% end %>
 
-<p><%= link_to 'Add Sub-Location', edit_location_path(@location) %></p>
+<p><span><b>Outgoing Adjacent Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :add_sublocation, :id => @location.id} %></span></p>
+<% @location.outgoing_adjacent_locations.each do |location| %>
+<p>
+	<%=h location.inspect %>
+</p>
+<% end %>
+
+<p><span><b>Incoming Adjacent Locations</b></span>&nbsp;&nbsp;<span><%= link_to 'Add', {:action => :add_sublocation, :id => @location.id} %></span></p>
+<% @location.incoming_adjacent_locations.each do |location| %>
+<p>
+	<%=h location.inspect %>
+</p>
+<% end %>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
