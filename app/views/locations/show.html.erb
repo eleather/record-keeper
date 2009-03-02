@@ -1,0 +1,21 @@
+<p>
+  <b>Title:</b>
+  <%=h @location.title %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%=h @location.text %>
+</p>
+
+<p><b>Sub-Locations</b></p>
+<% @location.children.each do |location| %>
+<p>
+	<%=h location.inspect %>
+</p>
+<% end %>
+
+<p><%= link_to 'Add Sub-Location', edit_location_path(@location) %></p>
+
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>

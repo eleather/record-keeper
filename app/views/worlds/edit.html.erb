@@ -1,0 +1,17 @@
+<h1>Editing world</h1>
+
+<%= error_messages_for :world %>
+
+<% form_for(@world) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @world %> |
+<%= link_to 'Back', worlds_path %>

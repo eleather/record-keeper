@@ -1,0 +1,1601 @@
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+  [4;36;1mPage Create (0.000544)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:01:02', 'page 1', 'content 1', '2009-03-01 19:01:02')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: d89f7fb6bfbd0b701a0fbf93edfcd44d
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000417)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00697 (143 reqs/sec) | Rendering: 0.00231 (33%) | DB: 0.00096 (13%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: 6e49e3fc3eba5d9b05d49918992fe6c0
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000263)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00147 (681 reqs/sec) | Rendering: 0.00042 (28%) | DB: 0.00026 (17%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/new with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering pages/new
+Completed in 0.00315 (317 reqs/sec) | Rendering: 0.00257 (81%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/pages/new]
+REQUESTING PAGE: POST /pages with {"commit"=>"Create", "page"=>{"title"=>"page 1", "content"=>"content 1"}} and HTTP headers {"HTTP_REFERER"=>"/pages/new"}
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-03-01 19:01:02) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"pages", "page"=>{"title"=>"page 1", "content"=>"content 1"}}
+  [4;35;1mPage Create (0.000462)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:01:02', 'page 1', 'content 1', '2009-03-01 19:01:02')[0m
+Redirected to http://www.example.com/pages/1
+Completed in 0.00216 (462 reqs/sec) | DB: 0.00046 (21%) | 302 Found [http://www.example.com/pages]
+REQUESTING PAGE: GET http://www.example.com/pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1BhZ2Ugd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--ea4bd3f413ca0d9398513eb6c80b593c31780389
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000305)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering pages/show
+Completed in 0.00253 (395 reqs/sec) | Rendering: 0.00135 (53%) | DB: 0.00031 (12%) | 200 OK [http://www.example.com/pages/1]
+  [4;35;1mPage Create (0.000567)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:01:02', 'page 1', 'content 1', '2009-03-01 19:01:02')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: ee1562b482d8bc22e609d0fd8962119e
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000353)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00264 (378 reqs/sec) | Rendering: 0.00116 (43%) | DB: 0.00092 (34%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000290)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering pages/show
+Completed in 0.00166 (602 reqs/sec) | Rendering: 0.00048 (28%) | DB: 0.00029 (17%) | 200 OK [http://www.example.com/pages/1]
+  [4;36;1mPage Create (0.000524)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:01:02', 'page 1', 'content 1', '2009-03-01 19:01:02')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: f806edc4031bcd66bc6c74a48e2a36b2
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000325)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00224 (447 reqs/sec) | Rendering: 0.00092 (41%) | DB: 0.00085 (37%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: DELETE /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2009-03-01 19:01:02) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000350)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+  [4;35;1mPage Destroy (0.000170)[0m   [0m DELETE FROM pages
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/pages
+Completed in 0.00208 (481 reqs/sec) | DB: 0.00052 (25%) | 302 Found [http://www.example.com/pages/1]
+REQUESTING PAGE: GET http://www.example.com/pages with {} and HTTP headers {"HTTP_REFERER"=>"/pages/1"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000171)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00163 (613 reqs/sec) | Rendering: 0.00058 (35%) | DB: 0.00017 (10%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000183)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00164 (608 reqs/sec) | Rendering: 0.00051 (31%) | DB: 0.00018 (11%) | 200 OK [http://www.example.com/pages]
+  [4;36;1mTask Create (0.000611)[0m   [0;1mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:01:02', 'task 1', '2009-03-01 19:01:02')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: 12824609d5c1d54d453e8c7923fd1d0c
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000350)[0m   [0mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00615 (162 reqs/sec) | Rendering: 0.00212 (34%) | DB: 0.00096 (15%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: baeeb0f41831e371db98790c329f73cf
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000267)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00168 (593 reqs/sec) | Rendering: 0.00051 (30%) | DB: 0.00027 (15%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering tasks/new
+Completed in 0.00349 (286 reqs/sec) | Rendering: 0.00280 (80%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"Name your world"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-03-01 19:01:02) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"description"=>"Name your world"}, "controller"=>"tasks"}
+  [4;35;1mTask Create (0.000699)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:01:02', 'Name your world', '2009-03-01 19:01:02')[0m
+Redirected to http://www.example.com/tasks/1
+Completed in 0.00305 (328 reqs/sec) | DB: 0.00070 (22%) | 302 Found [http://www.example.com/tasks]
+REQUESTING PAGE: GET http://www.example.com/tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1Rhc2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--1418b17c6da31c34d1f0973c366a160e833f35a8
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000904)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+Rendering tasks/show
+Completed in 0.00338 (296 reqs/sec) | Rendering: 0.00149 (44%) | DB: 0.00090 (26%) | 200 OK [http://www.example.com/tasks/1]
+  [4;35;1mTask Create (0.000519)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:01:02', 'task 1', '2009-03-01 19:01:02')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: 926aa12cac0f1a1a2d0e323dcafa0fb5
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000319)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00232 (431 reqs/sec) | Rendering: 0.00096 (41%) | DB: 0.00084 (36%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-03-01 19:01:02) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000354)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+  [4;36;1mTask Destroy (0.000113)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/tasks
+Completed in 0.00224 (445 reqs/sec) | DB: 0.00047 (20%) | 302 Found [http://www.example.com/tasks/1]
+REQUESTING PAGE: GET http://www.example.com/tasks with {} and HTTP headers {"HTTP_REFERER"=>"/tasks/1"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000191)[0m   [0mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00164 (610 reqs/sec) | Rendering: 0.00054 (32%) | DB: 0.00019 (11%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/tasks"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:01:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000196)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00162 (618 reqs/sec) | Rendering: 0.00050 (31%) | DB: 0.00020 (12%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mPage Create (0.000532)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:02:54', 'page 1', 'content 1', '2009-03-01 19:02:54')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: 7af0bd145175c571ea3cb2b66d63a7a9
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000317)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00625 (159 reqs/sec) | Rendering: 0.00235 (37%) | DB: 0.00085 (13%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: 3343445b7e71f8a9ad7eeddc3552f867
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000272)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00186 (539 reqs/sec) | Rendering: 0.00061 (32%) | DB: 0.00027 (14%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/new with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering pages/new
+Completed in 0.00733 (136 reqs/sec) | Rendering: 0.00659 (89%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/pages/new]
+REQUESTING PAGE: POST /pages with {"commit"=>"Create", "page"=>{"title"=>"page 1", "content"=>"content 1"}} and HTTP headers {"HTTP_REFERER"=>"/pages/new"}
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-03-01 19:02:54) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"pages", "page"=>{"title"=>"page 1", "content"=>"content 1"}}
+  [4;35;1mPage Create (0.000471)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:02:54', 'page 1', 'content 1', '2009-03-01 19:02:54')[0m
+Redirected to http://www.example.com/pages/1
+Completed in 0.00218 (459 reqs/sec) | DB: 0.00047 (21%) | 302 Found [http://www.example.com/pages]
+REQUESTING PAGE: GET http://www.example.com/pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1BhZ2Ugd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--ea4bd3f413ca0d9398513eb6c80b593c31780389
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000321)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering pages/show
+Completed in 0.00272 (366 reqs/sec) | Rendering: 0.00148 (54%) | DB: 0.00032 (11%) | 200 OK [http://www.example.com/pages/1]
+  [4;35;1mPage Create (0.000610)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:02:54', 'page 1', 'content 1', '2009-03-01 19:02:54')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: 4949a45a47fa164ef8add2856cf647e5
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000318)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00231 (432 reqs/sec) | Rendering: 0.00100 (43%) | DB: 0.00093 (40%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000286)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering pages/show
+Completed in 0.00164 (608 reqs/sec) | Rendering: 0.00048 (29%) | DB: 0.00029 (17%) | 200 OK [http://www.example.com/pages/1]
+  [4;36;1mPage Create (0.000553)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:02:54', 'page 1', 'content 1', '2009-03-01 19:02:54')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: b2a42315b331b91ee05102ce3140ab6f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000322)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00224 (445 reqs/sec) | Rendering: 0.00093 (41%) | DB: 0.00087 (39%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: DELETE /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2009-03-01 19:02:54) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000391)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+  [4;35;1mPage Destroy (0.000126)[0m   [0m DELETE FROM pages
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/pages
+Completed in 0.00213 (469 reqs/sec) | DB: 0.00052 (24%) | 302 Found [http://www.example.com/pages/1]
+REQUESTING PAGE: GET http://www.example.com/pages with {} and HTTP headers {"HTTP_REFERER"=>"/pages/1"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000170)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00170 (587 reqs/sec) | Rendering: 0.00056 (32%) | DB: 0.00017 (9%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000286)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00189 (528 reqs/sec) | Rendering: 0.00060 (31%) | DB: 0.00029 (15%) | 200 OK [http://www.example.com/pages]
+  [4;36;1mTask Create (0.000460)[0m   [0;1mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:02:54', 'task 1', '2009-03-01 19:02:54')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: 45046c7fe1521ff20a6039480efb4ba6
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000278)[0m   [0mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00576 (173 reqs/sec) | Rendering: 0.00203 (35%) | DB: 0.00074 (12%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: fe74e5de2edd1cf7d28a49a955ba5667
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000287)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00172 (579 reqs/sec) | Rendering: 0.00052 (29%) | DB: 0.00029 (16%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering tasks/new
+Completed in 0.00576 (173 reqs/sec) | Rendering: 0.00501 (87%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"Name your world"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-03-01 19:02:54) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"description"=>"Name your world"}, "controller"=>"tasks"}
+  [4;35;1mTask Create (0.000478)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:02:54', 'Name your world', '2009-03-01 19:02:54')[0m
+Redirected to http://www.example.com/tasks/1
+Completed in 0.00223 (447 reqs/sec) | DB: 0.00048 (21%) | 302 Found [http://www.example.com/tasks]
+REQUESTING PAGE: GET http://www.example.com/tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1Rhc2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--1418b17c6da31c34d1f0973c366a160e833f35a8
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000288)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+Rendering tasks/show
+Completed in 0.00243 (411 reqs/sec) | Rendering: 0.00126 (52%) | DB: 0.00029 (11%) | 200 OK [http://www.example.com/tasks/1]
+  [4;35;1mTask Create (0.000544)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:02:54', 'task 1', '2009-03-01 19:02:54')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: cb027f3da23d28b11f6e1b10d33a3548
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000280)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00216 (462 reqs/sec) | Rendering: 0.00091 (41%) | DB: 0.00082 (38%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-03-01 19:02:54) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000327)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+  [4;36;1mTask Destroy (0.000093)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/tasks
+Completed in 0.00176 (568 reqs/sec) | DB: 0.00042 (23%) | 302 Found [http://www.example.com/tasks/1]
+REQUESTING PAGE: GET http://www.example.com/tasks with {} and HTTP headers {"HTTP_REFERER"=>"/tasks/1"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000143)[0m   [0mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00153 (652 reqs/sec) | Rendering: 0.00062 (40%) | DB: 0.00014 (9%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/tasks"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:02:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000199)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00152 (658 reqs/sec) | Rendering: 0.00047 (30%) | DB: 0.00020 (13%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mPage Create (0.000536)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:08:10', 'page 3', 'content 3', '2009-03-01 19:08:10')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: c32342720acff8ee4104f0285da68bb6
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000421)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00663 (150 reqs/sec) | Rendering: 0.00251 (37%) | DB: 0.00096 (14%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: a4bfe9072cb1db0bc4f96b12d424de6c
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000264)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00167 (598 reqs/sec) | Rendering: 0.00052 (31%) | DB: 0.00026 (15%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/new with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering pages/new
+Completed in 0.00321 (311 reqs/sec) | Rendering: 0.00256 (79%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/pages/new]
+REQUESTING PAGE: POST /pages with {"commit"=>"Create", "page"=>{"title"=>"page 3", "content"=>"content 3"}} and HTTP headers {"HTTP_REFERER"=>"/pages/new"}
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-03-01 19:08:10) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"pages", "page"=>{"title"=>"page 3", "content"=>"content 3"}}
+  [4;35;1mPage Create (0.000458)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:08:10', 'page 3', 'content 3', '2009-03-01 19:08:10')[0m
+Redirected to http://www.example.com/pages/1
+Completed in 0.00224 (446 reqs/sec) | DB: 0.00046 (20%) | 302 Found [http://www.example.com/pages]
+REQUESTING PAGE: GET http://www.example.com/pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1BhZ2Ugd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--ea4bd3f413ca0d9398513eb6c80b593c31780389
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000338)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering pages/show
+Completed in 0.00293 (341 reqs/sec) | Rendering: 0.00152 (51%) | DB: 0.00034 (11%) | 200 OK [http://www.example.com/pages/1]
+  [4;35;1mPage Create (0.000503)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:08:10', 'page 1', 'content 1', '2009-03-01 19:08:10')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: e22eef161aae08a71796ec0c7d7bdfdb
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000293)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00189 (529 reqs/sec) | Rendering: 0.00076 (40%) | DB: 0.00080 (42%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000291)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering pages/show
+Completed in 0.00163 (613 reqs/sec) | Rendering: 0.00049 (29%) | DB: 0.00029 (17%) | 200 OK [http://www.example.com/pages/1]
+  [4;36;1mPage Create (0.000539)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:08:10', 'page 1', 'content 1', '2009-03-01 19:08:10')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: d75ecc5430d58883df7c8ec95345a1c0
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000322)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00223 (448 reqs/sec) | Rendering: 0.00093 (41%) | DB: 0.00086 (38%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: DELETE /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2009-03-01 19:08:10) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000347)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+  [4;35;1mPage Destroy (0.000109)[0m   [0m DELETE FROM pages
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/pages
+Completed in 0.00199 (503 reqs/sec) | DB: 0.00046 (22%) | 302 Found [http://www.example.com/pages/1]
+REQUESTING PAGE: GET http://www.example.com/pages with {} and HTTP headers {"HTTP_REFERER"=>"/pages/1"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000157)[0m   [0;1mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00144 (696 reqs/sec) | Rendering: 0.00047 (33%) | DB: 0.00016 (10%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000168)[0m   [0mSELECT * FROM pages [0m
+Rendering pages/index
+Completed in 0.00146 (683 reqs/sec) | Rendering: 0.00046 (31%) | DB: 0.00017 (11%) | 200 OK [http://www.example.com/pages]
+  [4;36;1mTask Create (0.000541)[0m   [0;1mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:08:10', 'task 1', '2009-03-01 19:08:10')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: 68f59c60e84ff563533de97954b00021
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000427)[0m   [0mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00615 (162 reqs/sec) | Rendering: 0.00208 (33%) | DB: 0.00097 (15%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: 03c3e2439edaa512602af0be1f6dab82
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000285)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00172 (580 reqs/sec) | Rendering: 0.00052 (30%) | DB: 0.00028 (16%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering tasks/new
+Completed in 0.00665 (150 reqs/sec) | Rendering: 0.00595 (89%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"Name your world"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-03-01 19:08:10) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"description"=>"Name your world"}, "controller"=>"tasks"}
+  [4;35;1mTask Create (0.000557)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:08:10', 'Name your world', '2009-03-01 19:08:10')[0m
+Redirected to http://www.example.com/tasks/1
+Completed in 0.00227 (440 reqs/sec) | DB: 0.00056 (24%) | 302 Found [http://www.example.com/tasks]
+REQUESTING PAGE: GET http://www.example.com/tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1Rhc2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--1418b17c6da31c34d1f0973c366a160e833f35a8
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000382)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+Rendering tasks/show
+Completed in 0.00252 (396 reqs/sec) | Rendering: 0.00127 (50%) | DB: 0.00038 (15%) | 200 OK [http://www.example.com/tasks/1]
+  [4;35;1mTask Create (0.000539)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:08:10', 'task 1', '2009-03-01 19:08:10')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: 4d6e84c3c822ce05946e1d6f7113e43a
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000302)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00216 (463 reqs/sec) | Rendering: 0.00091 (42%) | DB: 0.00084 (39%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-03-01 19:08:10) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000273)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+  [4;36;1mTask Destroy (0.000085)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/tasks
+Completed in 0.00163 (613 reqs/sec) | DB: 0.00036 (21%) | 302 Found [http://www.example.com/tasks/1]
+REQUESTING PAGE: GET http://www.example.com/tasks with {} and HTTP headers {"HTTP_REFERER"=>"/tasks/1"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000172)[0m   [0mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00178 (562 reqs/sec) | Rendering: 0.00067 (37%) | DB: 0.00017 (9%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/tasks"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:08:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000244)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering tasks/index
+Completed in 0.00161 (621 reqs/sec) | Rendering: 0.00049 (30%) | DB: 0.00024 (15%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mPage Create (0.000576)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:10:09', 'page 3', 'content 3', '2009-03-01 19:10:09')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: a90ac2bee1c2565a76527778f6dcf780
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000291)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00763 (131 reqs/sec) | Rendering: 0.00400 (52%) | DB: 0.00087 (11%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: 92268ac3358268f75290cd39c0530f39
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000232)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00182 (550 reqs/sec) | Rendering: 0.00072 (39%) | DB: 0.00023 (12%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/new with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+Completed in 0.00335 (298 reqs/sec) | Rendering: 0.00277 (82%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/pages/new]
+REQUESTING PAGE: POST /pages with {"commit"=>"Create", "page"=>{"title"=>"page 3", "content"=>"content 3"}} and HTTP headers {"HTTP_REFERER"=>"/pages/new"}
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-03-01 19:10:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"pages", "page"=>{"title"=>"page 3", "content"=>"content 3"}}
+  [4;35;1mPage Create (0.000451)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:10:09', 'page 3', 'content 3', '2009-03-01 19:10:09')[0m
+Redirected to http://www.example.com/pages/1
+Completed in 0.00218 (458 reqs/sec) | DB: 0.00045 (20%) | 302 Found [http://www.example.com/pages]
+REQUESTING PAGE: GET http://www.example.com/pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1BhZ2Ugd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--ea4bd3f413ca0d9398513eb6c80b593c31780389
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000292)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00293 (341 reqs/sec) | Rendering: 0.00168 (57%) | DB: 0.00029 (9%) | 200 OK [http://www.example.com/pages/1]
+  [4;35;1mPage Create (0.000577)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:10:09', 'page 1', 'content 1', '2009-03-01 19:10:09')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: c5dfa111fe0278d136e8f8d30bfe8b3f
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000328)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00264 (378 reqs/sec) | Rendering: 0.00128 (48%) | DB: 0.00091 (34%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000406)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00243 (412 reqs/sec) | Rendering: 0.00087 (35%) | DB: 0.00041 (16%) | 200 OK [http://www.example.com/pages/1]
+  [4;36;1mPage Create (0.000827)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:10:09', 'page 1', 'content 1', '2009-03-01 19:10:09')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: 0be8a9b12e9b9a093fdb1eb421d2d7d6
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000350)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00313 (319 reqs/sec) | Rendering: 0.00163 (52%) | DB: 0.00118 (37%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: DELETE /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2009-03-01 19:10:09) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000344)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+  [4;35;1mPage Destroy (0.000089)[0m   [0m DELETE FROM pages
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/pages
+Completed in 0.00189 (529 reqs/sec) | DB: 0.00043 (22%) | 302 Found [http://www.example.com/pages/1]
+REQUESTING PAGE: GET http://www.example.com/pages with {} and HTTP headers {"HTTP_REFERER"=>"/pages/1"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000186)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00206 (486 reqs/sec) | Rendering: 0.00077 (37%) | DB: 0.00019 (9%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000176)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00269 (371 reqs/sec) | Rendering: 0.00080 (29%) | DB: 0.00018 (6%) | 200 OK [http://www.example.com/pages]
+  [4;36;1mTask Create (0.000448)[0m   [0;1mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:10:09', 'task 1', '2009-03-01 19:10:09')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: a22c8cf1d13438f06fc3817ab606f819
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000259)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00618 (161 reqs/sec) | Rendering: 0.00248 (40%) | DB: 0.00071 (11%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: 7dc895275b528a8c215d2f8d2253e962
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000272)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00215 (464 reqs/sec) | Rendering: 0.00084 (39%) | DB: 0.00027 (12%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering template within layouts/application
+Rendering tasks/new
+Completed in 0.00471 (212 reqs/sec) | Rendering: 0.00398 (84%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"Name your world"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-03-01 19:10:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"description"=>"Name your world"}, "controller"=>"tasks"}
+  [4;35;1mTask Create (0.000483)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:10:09', 'Name your world', '2009-03-01 19:10:09')[0m
+Redirected to http://www.example.com/tasks/1
+Completed in 0.00214 (467 reqs/sec) | DB: 0.00048 (22%) | 302 Found [http://www.example.com/tasks]
+REQUESTING PAGE: GET http://www.example.com/tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1Rhc2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--1418b17c6da31c34d1f0973c366a160e833f35a8
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000267)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 0.00271 (369 reqs/sec) | Rendering: 0.00159 (58%) | DB: 0.00027 (9%) | 200 OK [http://www.example.com/tasks/1]
+  [4;35;1mTask Create (0.000532)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:10:09', 'task 1', '2009-03-01 19:10:09')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: 36cd84afedba9668f0fb5a9b26783ca9
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000310)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00245 (408 reqs/sec) | Rendering: 0.00117 (47%) | DB: 0.00084 (34%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-03-01 19:10:09) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000365)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+  [4;36;1mTask Destroy (0.000129)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/tasks
+Completed in 0.00204 (489 reqs/sec) | DB: 0.00049 (24%) | 302 Found [http://www.example.com/tasks/1]
+REQUESTING PAGE: GET http://www.example.com/tasks with {} and HTTP headers {"HTTP_REFERER"=>"/tasks/1"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000205)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00295 (339 reqs/sec) | Rendering: 0.00149 (50%) | DB: 0.00020 (6%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/tasks"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:10:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000200)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00182 (549 reqs/sec) | Rendering: 0.00077 (42%) | DB: 0.00020 (10%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mPage Create (0.000549)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:12:21', 'page 1', 'content 1', '2009-03-01 19:12:21')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: e8a2f26eb81d205d9c372dd8957ff0ad
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000345)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00996 (100 reqs/sec) | Rendering: 0.00572 (57%) | DB: 0.00089 (8%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: d43c6f7609d73b487304b0743d9d18c3
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000296)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00204 (490 reqs/sec) | Rendering: 0.00079 (38%) | DB: 0.00030 (14%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/new with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+Completed in 0.00395 (253 reqs/sec) | Rendering: 0.00323 (81%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/pages/new]
+REQUESTING PAGE: POST /pages with {"commit"=>"Create", "page"=>{"title"=>"page 1", "content"=>"content 1"}} and HTTP headers {"HTTP_REFERER"=>"/pages/new"}
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-03-01 19:12:21) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"pages", "page"=>{"title"=>"page 1", "content"=>"content 1"}}
+  [4;35;1mPage Create (0.000453)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:12:21', 'page 1', 'content 1', '2009-03-01 19:12:21')[0m
+Redirected to http://www.example.com/pages/1
+Completed in 0.00214 (466 reqs/sec) | DB: 0.00045 (21%) | 302 Found [http://www.example.com/pages]
+REQUESTING PAGE: GET http://www.example.com/pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1BhZ2Ugd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--ea4bd3f413ca0d9398513eb6c80b593c31780389
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000278)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00317 (315 reqs/sec) | Rendering: 0.00191 (60%) | DB: 0.00028 (8%) | 200 OK [http://www.example.com/pages/1]
+  [4;35;1mPage Create (0.000582)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:12:21', 'page 1', 'content 1', '2009-03-01 19:12:21')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: 69e5c5acce34fab82ce7a072ebb656c6
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000349)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00218 (459 reqs/sec) | Rendering: 0.00098 (44%) | DB: 0.00093 (42%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000289)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00187 (535 reqs/sec) | Rendering: 0.00072 (38%) | DB: 0.00029 (15%) | 200 OK [http://www.example.com/pages/1]
+  [4;36;1mPage Create (0.000538)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:12:21', 'page 1', 'content 1', '2009-03-01 19:12:21')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: aeecd17ee18e8da73eb603335d25d459
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000332)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00272 (368 reqs/sec) | Rendering: 0.00128 (47%) | DB: 0.00087 (32%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: DELETE /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2009-03-01 19:12:21) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000349)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+  [4;35;1mPage Destroy (0.000108)[0m   [0m DELETE FROM pages
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/pages
+Completed in 0.00203 (492 reqs/sec) | DB: 0.00046 (22%) | 302 Found [http://www.example.com/pages/1]
+REQUESTING PAGE: GET http://www.example.com/pages with {} and HTTP headers {"HTTP_REFERER"=>"/pages/1"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000169)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00163 (613 reqs/sec) | Rendering: 0.00069 (42%) | DB: 0.00017 (10%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000173)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00173 (576 reqs/sec) | Rendering: 0.00072 (41%) | DB: 0.00017 (9%) | 200 OK [http://www.example.com/pages]
+  [4;36;1mTask Create (0.000550)[0m   [0;1mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:12:21', 'task 1', '2009-03-01 19:12:21')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: bb7affdb93bfd243cec3f9935af630d4
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000318)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00781 (128 reqs/sec) | Rendering: 0.00306 (39%) | DB: 0.00087 (11%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: 312c920b882f04e42622c2eff7d67b35
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000283)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00205 (488 reqs/sec) | Rendering: 0.00084 (41%) | DB: 0.00028 (13%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering template within layouts/application
+Rendering tasks/new
+Completed in 0.00403 (247 reqs/sec) | Rendering: 0.00325 (80%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"Name your world"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-03-01 19:12:21) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"description"=>"Name your world"}, "controller"=>"tasks"}
+  [4;35;1mTask Create (0.000454)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:12:21', 'Name your world', '2009-03-01 19:12:21')[0m
+Redirected to http://www.example.com/tasks/1
+Completed in 0.00208 (481 reqs/sec) | DB: 0.00045 (21%) | 302 Found [http://www.example.com/tasks]
+REQUESTING PAGE: GET http://www.example.com/tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1Rhc2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--1418b17c6da31c34d1f0973c366a160e833f35a8
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000274)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 0.00273 (366 reqs/sec) | Rendering: 0.00158 (58%) | DB: 0.00027 (10%) | 200 OK [http://www.example.com/tasks/1]
+  [4;35;1mTask Create (0.000525)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:12:21', 'task 1', '2009-03-01 19:12:21')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: 198c36ee5a78e37ef501cef497c67bf2
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000311)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00251 (397 reqs/sec) | Rendering: 0.00122 (48%) | DB: 0.00084 (33%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-03-01 19:12:21) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000325)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+  [4;36;1mTask Destroy (0.000116)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/tasks
+Completed in 0.00217 (460 reqs/sec) | DB: 0.00044 (20%) | 302 Found [http://www.example.com/tasks/1]
+REQUESTING PAGE: GET http://www.example.com/tasks with {} and HTTP headers {"HTTP_REFERER"=>"/tasks/1"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000218)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00207 (483 reqs/sec) | Rendering: 0.00085 (41%) | DB: 0.00022 (10%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/tasks"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:12:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000184)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00169 (591 reqs/sec) | Rendering: 0.00071 (42%) | DB: 0.00018 (10%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mPage Create (0.000595)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:13:32', 'page 1', 'content 1', '2009-03-01 19:13:32')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: c8cdbae537ffc7a61a980644ba8d9ffe
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000330)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.01032 (96 reqs/sec) | Rendering: 0.00609 (59%) | DB: 0.00092 (8%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: 06b60ae988d504e1092e6c2fbf01577a
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000516)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00249 (402 reqs/sec) | Rendering: 0.00085 (34%) | DB: 0.00052 (20%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/new with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+Completed in 0.00437 (228 reqs/sec) | Rendering: 0.00360 (82%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/pages/new]
+REQUESTING PAGE: POST /pages with {"commit"=>"Create", "page"=>{"title"=>"page 1", "content"=>"content 1"}} and HTTP headers {"HTTP_REFERER"=>"/pages/new"}
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-03-01 19:13:32) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"pages", "page"=>{"title"=>"page 1", "content"=>"content 1"}}
+  [4;35;1mPage Create (0.000452)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:13:32', 'page 1', 'content 1', '2009-03-01 19:13:32')[0m
+Redirected to http://www.example.com/pages/1
+Completed in 0.00215 (465 reqs/sec) | DB: 0.00045 (21%) | 302 Found [http://www.example.com/pages]
+REQUESTING PAGE: GET http://www.example.com/pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1BhZ2Ugd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--ea4bd3f413ca0d9398513eb6c80b593c31780389
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000348)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00442 (226 reqs/sec) | Rendering: 0.00251 (56%) | DB: 0.00035 (7%) | 200 OK [http://www.example.com/pages/1]
+  [4;35;1mPage Create (0.000458)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:13:32', 'page 1', 'content 1', '2009-03-01 19:13:32')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: 5b495b596b8e5a702da0213db0fc1b4e
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000283)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00215 (465 reqs/sec) | Rendering: 0.00107 (49%) | DB: 0.00074 (34%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000351)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00194 (516 reqs/sec) | Rendering: 0.00070 (36%) | DB: 0.00035 (18%) | 200 OK [http://www.example.com/pages/1]
+  [4;36;1mPage Create (0.000512)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:13:32', 'page 1', 'content 1', '2009-03-01 19:13:32')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: 3afb769961cb30c3fac092ddeb555cd9
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000379)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00273 (365 reqs/sec) | Rendering: 0.00128 (46%) | DB: 0.00089 (32%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: DELETE /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2009-03-01 19:13:32) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000302)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+  [4;35;1mPage Destroy (0.000085)[0m   [0m DELETE FROM pages
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/pages
+Completed in 0.00163 (612 reqs/sec) | DB: 0.00039 (23%) | 302 Found [http://www.example.com/pages/1]
+REQUESTING PAGE: GET http://www.example.com/pages with {} and HTTP headers {"HTTP_REFERER"=>"/pages/1"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000144)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00154 (650 reqs/sec) | Rendering: 0.00070 (45%) | DB: 0.00014 (9%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000155)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00151 (660 reqs/sec) | Rendering: 0.00063 (41%) | DB: 0.00015 (10%) | 200 OK [http://www.example.com/pages]
+  [4;36;1mTask Create (0.000485)[0m   [0;1mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:13:32', 'task 1', '2009-03-01 19:13:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: 9d0f669503a8beaf0e5c9fecd6fcb22e
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000305)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00685 (146 reqs/sec) | Rendering: 0.00302 (44%) | DB: 0.00079 (11%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: 3fd255daff8393b37af78a05b866721a
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000313)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00208 (480 reqs/sec) | Rendering: 0.00082 (39%) | DB: 0.00031 (15%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering template within layouts/application
+Rendering tasks/new
+Completed in 0.00377 (265 reqs/sec) | Rendering: 0.00308 (81%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"Name your world"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-03-01 19:13:32) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"description"=>"Name your world"}, "controller"=>"tasks"}
+  [4;35;1mTask Create (0.000472)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:13:32', 'Name your world', '2009-03-01 19:13:32')[0m
+Redirected to http://www.example.com/tasks/1
+Completed in 0.00210 (476 reqs/sec) | DB: 0.00047 (22%) | 302 Found [http://www.example.com/tasks]
+REQUESTING PAGE: GET http://www.example.com/tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1Rhc2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--1418b17c6da31c34d1f0973c366a160e833f35a8
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000420)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 0.00302 (331 reqs/sec) | Rendering: 0.00157 (52%) | DB: 0.00042 (13%) | 200 OK [http://www.example.com/tasks/1]
+  [4;35;1mTask Create (0.000617)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:13:32', 'task 1', '2009-03-01 19:13:32')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: 18aa20987ab07265410cdcfccd791940
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000316)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00248 (402 reqs/sec) | Rendering: 0.00120 (48%) | DB: 0.00093 (37%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-03-01 19:13:32) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000412)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+  [4;36;1mTask Destroy (0.000115)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/tasks
+Completed in 0.00210 (475 reqs/sec) | DB: 0.00053 (25%) | 302 Found [http://www.example.com/tasks/1]
+REQUESTING PAGE: GET http://www.example.com/tasks with {} and HTTP headers {"HTTP_REFERER"=>"/tasks/1"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000167)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00446 (224 reqs/sec) | Rendering: 0.00326 (73%) | DB: 0.00017 (3%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/tasks"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:13:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000219)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00195 (514 reqs/sec) | Rendering: 0.00078 (40%) | DB: 0.00022 (11%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mPage Create (0.000550)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:14:12', 'page 1', 'content 1', '2009-03-01 19:14:12')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: 8306a8173f8f7856fac3df0973b6b658
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000312)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00979 (102 reqs/sec) | Rendering: 0.00588 (60%) | DB: 0.00086 (8%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: 31a8459ad628edad9b25c888a9d588c6
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000315)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00215 (465 reqs/sec) | Rendering: 0.00079 (36%) | DB: 0.00032 (14%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/new with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+Completed in 0.00434 (230 reqs/sec) | Rendering: 0.00361 (83%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/pages/new]
+REQUESTING PAGE: POST /pages with {"commit"=>"Create", "page"=>{"title"=>"page 1", "content"=>"content 1"}} and HTTP headers {"HTTP_REFERER"=>"/pages/new"}
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-03-01 19:14:12) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"pages", "page"=>{"title"=>"page 1", "content"=>"content 1"}}
+  [4;35;1mPage Create (0.000489)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:14:12', 'page 1', 'content 1', '2009-03-01 19:14:12')[0m
+Redirected to http://www.example.com/pages/1
+Completed in 0.00234 (427 reqs/sec) | DB: 0.00049 (20%) | 302 Found [http://www.example.com/pages]
+REQUESTING PAGE: GET http://www.example.com/pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1BhZ2Ugd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--ea4bd3f413ca0d9398513eb6c80b593c31780389
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.005684)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00925 (108 reqs/sec) | Rendering: 0.00198 (21%) | DB: 0.00568 (61%) | 200 OK [http://www.example.com/pages/1]
+  [4;35;1mPage Create (0.000568)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:14:12', 'page 1', 'content 1', '2009-03-01 19:14:12')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: 83df9fb5d666052e73e246dc44c62e73
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000269)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00199 (503 reqs/sec) | Rendering: 0.00094 (47%) | DB: 0.00084 (42%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000286)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00187 (535 reqs/sec) | Rendering: 0.00071 (37%) | DB: 0.00029 (15%) | 200 OK [http://www.example.com/pages/1]
+  [4;36;1mPage Create (0.000529)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:14:12', 'page 1', 'content 1', '2009-03-01 19:14:12')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: dfc9705b86bf05aab1dac3fdacb74fd9
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000340)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00257 (388 reqs/sec) | Rendering: 0.00122 (47%) | DB: 0.00087 (33%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: DELETE /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2009-03-01 19:14:12) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000347)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+  [4;35;1mPage Destroy (0.000106)[0m   [0m DELETE FROM pages
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/pages
+Completed in 0.00199 (503 reqs/sec) | DB: 0.00045 (22%) | 302 Found [http://www.example.com/pages/1]
+REQUESTING PAGE: GET http://www.example.com/pages with {} and HTTP headers {"HTTP_REFERER"=>"/pages/1"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000157)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00172 (580 reqs/sec) | Rendering: 0.00074 (43%) | DB: 0.00016 (9%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000159)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00150 (668 reqs/sec) | Rendering: 0.00063 (41%) | DB: 0.00016 (10%) | 200 OK [http://www.example.com/pages]
+  [4;36;1mTask Create (0.000529)[0m   [0;1mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:14:12', 'task 1', '2009-03-01 19:14:12')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: ba4919d160ba2bf78bee9a0eefa9afed
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000312)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00632 (158 reqs/sec) | Rendering: 0.00264 (41%) | DB: 0.00084 (13%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: 4642e0fc31bc24b560ba9fa3879e71d8
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000253)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00169 (593 reqs/sec) | Rendering: 0.00064 (38%) | DB: 0.00025 (15%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering template within layouts/application
+Rendering tasks/new
+Completed in 0.00327 (305 reqs/sec) | Rendering: 0.00257 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"Name your world"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-03-01 19:14:12) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"description"=>"Name your world"}, "controller"=>"tasks"}
+  [4;35;1mTask Create (0.000450)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:14:12', 'Name your world', '2009-03-01 19:14:12')[0m
+Redirected to http://www.example.com/tasks/1
+Completed in 0.00203 (493 reqs/sec) | DB: 0.00045 (22%) | 302 Found [http://www.example.com/tasks]
+REQUESTING PAGE: GET http://www.example.com/tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1Rhc2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--1418b17c6da31c34d1f0973c366a160e833f35a8
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000353)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 0.00328 (304 reqs/sec) | Rendering: 0.00187 (57%) | DB: 0.00035 (10%) | 200 OK [http://www.example.com/tasks/1]
+  [4;35;1mTask Create (0.000447)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:14:12', 'task 1', '2009-03-01 19:14:12')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: 067e0978285eeb1b6e1b239178438bde
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000284)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00217 (460 reqs/sec) | Rendering: 0.00105 (48%) | DB: 0.00073 (33%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-03-01 19:14:12) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000298)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+  [4;36;1mTask Destroy (0.000085)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/tasks
+Completed in 0.00164 (610 reqs/sec) | DB: 0.00038 (23%) | 302 Found [http://www.example.com/tasks/1]
+REQUESTING PAGE: GET http://www.example.com/tasks with {} and HTTP headers {"HTTP_REFERER"=>"/tasks/1"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000260)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00181 (551 reqs/sec) | Rendering: 0.00074 (41%) | DB: 0.00026 (14%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/tasks"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:14:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000155)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00161 (622 reqs/sec) | Rendering: 0.00071 (43%) | DB: 0.00016 (9%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mPage Create (0.000530)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:20:35', 'page 1', 'content 1', '2009-03-01 19:20:35')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: 70cd3f88dbe4ae3c108fe6df137a0728
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000342)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00956 (104 reqs/sec) | Rendering: 0.00480 (50%) | DB: 0.00087 (9%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: 33a180fc095bfcf251357b306499ec24
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000271)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00185 (539 reqs/sec) | Rendering: 0.00074 (39%) | DB: 0.00027 (14%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/new with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+Completed in 0.00354 (282 reqs/sec) | Rendering: 0.00294 (83%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/pages/new]
+REQUESTING PAGE: POST /pages with {"commit"=>"Create", "page"=>{"title"=>"page 1", "content"=>"content 1"}} and HTTP headers {"HTTP_REFERER"=>"/pages/new"}
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-03-01 19:20:35) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"pages", "page"=>{"title"=>"page 1", "content"=>"content 1"}}
+  [4;35;1mPage Create (0.000542)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:20:35', 'page 1', 'content 1', '2009-03-01 19:20:35')[0m
+Redirected to http://www.example.com/pages/1
+Completed in 0.00233 (429 reqs/sec) | DB: 0.00054 (23%) | 302 Found [http://www.example.com/pages]
+REQUESTING PAGE: GET http://www.example.com/pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1BhZ2Ugd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--ea4bd3f413ca0d9398513eb6c80b593c31780389
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000306)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00295 (339 reqs/sec) | Rendering: 0.00172 (58%) | DB: 0.00031 (10%) | 200 OK [http://www.example.com/pages/1]
+  [4;35;1mPage Create (0.000464)[0m   [0mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:20:35', 'page 1', 'content 1', '2009-03-01 19:20:35')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: d0d1e45bd11821e1578603092a697a8e
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000289)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00209 (478 reqs/sec) | Rendering: 0.00099 (47%) | DB: 0.00075 (36%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000288)[0m   [0mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.00188 (532 reqs/sec) | Rendering: 0.00071 (37%) | DB: 0.00029 (15%) | 200 OK [http://www.example.com/pages/1]
+  [4;36;1mPage Create (0.000527)[0m   [0;1mINSERT INTO pages ("updated_at", "title", "content", "created_at") VALUES('2009-03-01 19:20:35', 'page 1', 'content 1', '2009-03-01 19:20:35')[0m
+REQUESTING PAGE: GET /pages with {} and HTTP headers {}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: af5907e9aefd3996ffb115570218d676
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000324)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00255 (391 reqs/sec) | Rendering: 0.00120 (46%) | DB: 0.00085 (33%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: DELETE /pages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pages"}
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2009-03-01 19:20:35) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000365)[0m   [0;1mSELECT * FROM pages WHERE (pages."id" = 1) [0m
+  [4;35;1mPage Destroy (0.000097)[0m   [0m DELETE FROM pages
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/pages
+Completed in 0.00191 (522 reqs/sec) | DB: 0.00046 (24%) | 302 Found [http://www.example.com/pages/1]
+REQUESTING PAGE: GET http://www.example.com/pages with {} and HTTP headers {"HTTP_REFERER"=>"/pages/1"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000146)[0m   [0;1mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00173 (578 reqs/sec) | Rendering: 0.00075 (43%) | DB: 0.00015 (8%) | 200 OK [http://www.example.com/pages]
+REQUESTING PAGE: GET /pages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000166)[0m   [0mSELECT * FROM pages [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00152 (657 reqs/sec) | Rendering: 0.00063 (41%) | DB: 0.00017 (10%) | 200 OK [http://www.example.com/pages]
+  [4;36;1mTask Create (0.000621)[0m   [0;1mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:20:35', 'task 1', '2009-03-01 19:20:35')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: b6b96df8ef32cbec15f39431f61a3058
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000302)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00675 (148 reqs/sec) | Rendering: 0.00266 (39%) | DB: 0.00092 (13%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: e399996668ec60e67676b74767070b70
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000262)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00210 (475 reqs/sec) | Rendering: 0.00096 (45%) | DB: 0.00026 (12%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering template within layouts/application
+Rendering tasks/new
+Completed in 0.00521 (191 reqs/sec) | Rendering: 0.00459 (88%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"description"=>"Name your world"}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-03-01 19:20:35) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"description"=>"Name your world"}, "controller"=>"tasks"}
+  [4;35;1mTask Create (0.000496)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:20:35', 'Name your world', '2009-03-01 19:20:35')[0m
+Redirected to http://www.example.com/tasks/1
+Completed in 0.00882 (113 reqs/sec) | DB: 0.00050 (5%) | 302 Found [http://www.example.com/tasks]
+REQUESTING PAGE: GET http://www.example.com/tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-03-01 19:20:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiI1Rhc2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk%0ALgY6CkB1c2VkewY7BlQ%3D--1418b17c6da31c34d1f0973c366a160e833f35a8
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000270)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 0.00269 (371 reqs/sec) | Rendering: 0.00156 (58%) | DB: 0.00027 (10%) | 200 OK [http://www.example.com/tasks/1]
+  [4;35;1mTask Create (0.000614)[0m   [0mINSERT INTO tasks ("updated_at", "description", "created_at") VALUES('2009-03-01 19:20:36', 'task 1', '2009-03-01 19:20:36')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:20:36) [GET]
+  Session ID: ed9aeecaa27a2ed894f94c46dc3ea652
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000339)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00272 (368 reqs/sec) | Rendering: 0.00133 (49%) | DB: 0.00095 (35%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: DELETE /tasks/1 with {} and HTTP headers {"HTTP_REFERER"=>"/tasks"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2009-03-01 19:20:36) [DELETE]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000322)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1) [0m
+  [4;36;1mTask Destroy (0.000095)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1
+[0m
+Redirected to http://www.example.com/tasks
+Completed in 0.00181 (553 reqs/sec) | DB: 0.00042 (23%) | 302 Found [http://www.example.com/tasks/1]
+REQUESTING PAGE: GET http://www.example.com/tasks with {} and HTTP headers {"HTTP_REFERER"=>"/tasks/1"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:20:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000137)[0m   [0mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00154 (649 reqs/sec) | Rendering: 0.00071 (45%) | DB: 0.00014 (8%) | 200 OK [http://www.example.com/tasks]
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/tasks"}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-03-01 19:20:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--71115a074f1b8a74e21690f5289d4053126550ac
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000151)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 0.00159 (627 reqs/sec) | Rendering: 0.00066 (41%) | DB: 0.00015 (9%) | 200 OK [http://www.example.com/tasks]
